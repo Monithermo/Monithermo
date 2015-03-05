@@ -4,37 +4,37 @@
 Introduction :
 --------------
 
-<p>	Ce projet a pour but de créer un capteur de température connecté. Nous avons choisi l'arduino Yún pour ces deux caractéristiques principales.
+	Ce projet a pour but de crÃ©er un capteur de tempÃ©rature connectÃ©. Nous avons choisi l'arduino YÃºn pour ces deux caractÃ©ristiques principales.
 
-Premièrement, il posséde une puce WiFi ainsi qu'un port ethernet ; deuxièmement, il embarque un linux qui communique avec le microcontrôleur à l'aide de
+PremiÃ¨rement, il possÃ©de une puce WiFi ainsi qu'un port ethernet ; deuxiÃ¨mement, il embarque un linux qui communique avec le microcontrÃ´leur Ã  l'aide de
 
-la bibliothèque "bridge". 
+la bibliothÃ¨que "bridge". 
 
 	De ce fait le programme est incompatible avec les autres cartes Arduino.
 
-	Néanmoins les librairies utilisées pour stocker l'identifiant en EEPROM, créer un port logiciel de débugage, ainsi que celles-utilisées pour contrôler le
+	NÃ©anmoins les librairies utilisÃ©es pour stocker l'identifiant en EEPROM, crÃ©er un port logiciel de dÃ©bugage, ainsi que celles-utilisÃ©es pour contrÃ´ler le
 
 capteur sont fonctionnelles sur toutes les cartes.
 
-</p>
 
 
-Côté logiciel : 
+
+CÃ´tÃ© logiciel : 
 ---------------
 
-	Ce projet contient, un programme devant être téléversé sur le Yún avec l'IDE Arduino nommé " Monithermo_One.ino " , ainsi qu'un programme devant être placé
+	Ce projet contient, un programme devant Ãªtre tÃ©lÃ©versÃ© sur le YÃºn avec l'IDE Arduino nommÃ© " Monithermo_One.ino " , ainsi qu'un programme devant Ãªtre placÃ©
 
-dans le dossier " /usr/lib/python/bridge/ " nommé " post_temp.py " . Cependant, ce dernier ne fonctionnera pas si aucune adresse de post n'est spécifiée.
+dans le dossier " /usr/lib/python/bridge/ " nommÃ© " post_temp.py " . Cependant, ce dernier ne fonctionnera pas si aucune adresse de post n'est spÃ©cifiÃ©e.
 
-	Le programme permettant de stocker l'identifiant du capteur dans l'EEPROM interne du micro-contrôleur se situe à l'adresse suivante : 
+	Le programme permettant de stocker l'identifiant du capteur dans l'EEPROM interne du micro-contrÃ´leur se situe Ã  l'adresse suivante : 
 
 		" https://github.com/previmeteo/gprs-davis-datalogger/tree/master/firmware/atmega328/station_id_rec_in_eeprom "
 
-	Pour ce qui est des librairies, elles devront être placées dans le dossier " librairies " de votre IDE.
+	Pour ce qui est des librairies, elles devront Ãªtre placÃ©es dans le dossier " librairies " de votre IDE.
 
-	Liste des librairies utilisée : 
+	Liste des librairies utilisÃ©e : 
 	
-		- SoftwareSerial, (renommée " Newsoftserial " -> http://arduiniana.org/libraries/newsoftserial/ )
+		- SoftwareSerial, (renommÃ©e " Newsoftserial " -> http://arduiniana.org/libraries/newsoftserial/ )
 
 		- OneWire, (natif sur l'IDE Arduino)
 
@@ -45,18 +45,18 @@ dans le dossier " /usr/lib/python/bridge/ " nommé " post_temp.py " . Cependant, 
 Remarques : 
 -----------
 
-	- Si vous programmez le Yún par connexion WiFi, l'identifiant stocké en EEPROM sera effacé.
+	- Si vous programmez le YÃºn par connexion WiFi, l'identifiant stockÃ© en EEPROM sera effacÃ©.
 
-	- Si vous renommé le programme " post_temp.py ", il faudra également le changer dans la fonction " PostTemp() " du programme " Monithermo_One.ino "
+	- Si vous renommÃ© le programme " post_temp.py ", il faudra Ã©galement le changer dans la fonction " PostTemp() " du programme " Monithermo_One.ino "
 	
-	- IDE testé : Arduino 1.5.5-r2
+	- IDE testÃ© : Arduino 1.5.5-r2
 
 
 
-Caractéristiques hardware : 
+CaractÃ©ristiques hardware : 
 ---------------------------
 
-La sonde DS18B20 est prévue pour être connectée comme ceci : 
+La sonde DS18B20 est prÃ©vue pour Ãªtre connectÃ©e comme ceci : 
 
 	pin 10 -> Data (jaune)
 
@@ -64,6 +64,6 @@ La sonde DS18B20 est prévue pour être connectée comme ceci :
 
 	GND -> GND (bleu)
 
-Le temps écoulé entre deux prises de températures peux être réglé dans le programme (variable globale " temps ", il est défini à 5 minutes dans l'exemple.
+Le temps Ã©coulÃ© entre deux prises de tempÃ©ratures peux Ãªtre rÃ©glÃ© dans le programme (variable globale " temps ", il est dÃ©fini Ã  5 minutes dans l'exemple.
 
-Le port de débugage est situé sur la broche 3.
+Le port de dÃ©bugage est situÃ© sur la broche 3.
