@@ -4,7 +4,7 @@
 Introduction :
 --------------
 
-	Ce projet a pour but de créer un capteur de température connecté. Nous avons choisi l'arduino Yún pour ces deux caractéristiques principales.
+<p>	Ce projet a pour but de créer un capteur de température connecté. Nous avons choisi l'arduino Yún pour ces deux caractéristiques principales.
 
 Premièrement, il posséde une puce WiFi ainsi qu'un port ethernet ; deuxièmement, il embarque un linux qui communique avec le microcontrôleur à l'aide de
 
@@ -16,6 +16,7 @@ la bibliothèque "bridge".
 
 capteur sont fonctionnelles sur toutes les cartes.
 
+</p>
 
 
 Côté logiciel : 
