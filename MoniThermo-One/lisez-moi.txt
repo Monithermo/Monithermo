@@ -8,7 +8,7 @@ Introduction :
 
 Premièrement, il posséde une puce WiFi ainsi qu'un port ethernet ; deuxièmement, il embarque un linux qui communique avec le microcontrôleur à l'aide de
 
-la bibliothèque "bridge". 
+la bibliothèque "bridge". Le capteur utilisé ici n'est autre que le DS18B20 sous sa forme étanche.
 
 	De ce fait le programme est incompatible avec les autres cartes Arduino.
 
