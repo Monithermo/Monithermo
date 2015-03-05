@@ -6,4 +6,4 @@ Premièrement, il posséde une puce WiFi ainsi qu'un port ethernet ; deuxièmeme
 
 Dans le dossier Monithermo-One vous trouverez les codes sources du projet ainsi qu'une bref explication sur son fonctionnement.
 
-Tous les programmes sont bien entendu sous licence open source (GNU GPL V02).
+Tous les programmes sont bien entendu sous licence open source (GNU GPL v2).
